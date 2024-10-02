@@ -1,0 +1,14 @@
+The dataset names have been simplified, but here are the full dataset names and data sources for reference.
+
+
+NICKNAME : delivery
+FULL NAME : MTA_Bus_Service_Delivered__2015-2019_20241001.csv
+SOURCE : https://data.ny.gov/Transportation/MTA-Bus-Service-Delivered-2015-2019/tw28-zvtk/about_data
+
+NICKNAME : wait
+FULL NAME : MTA_Bus_Wait_Assessment__2015-2019_20241001.csv
+SOURCE : https://data.ny.gov/Transportation/MTA-Bus-Wait-Assessment-2015-2019/bmix-dpzc/about_data
+
+NICKNAME : speed
+FULL NAME : MTA_Bus_Speeds__2015-2019_20241001.csv
+SOURCE : https://data.ny.gov/Transportation/MTA-Bus-Speeds-2015-2019/cudb-vcni/about_data
