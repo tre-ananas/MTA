@@ -1,0 +1,59 @@
+##### DATASET NICKNAMES
+The dataset names have been simplified, but here are the full dataset names and data sources for reference.
+
+NICKNAME : delivery
+FULL NAME : MTA_Bus_Service_Delivered__2015-2019_20241001.csv
+SOURCE : https://data.ny.gov/Transportation/MTA-Bus-Service-Delivered-2015-2019/tw28-zvtk/about_data
+
+NICKNAME : wait
+FULL NAME : MTA_Bus_Wait_Assessment__2015-2019_20241001.csv
+SOURCE : https://data.ny.gov/Transportation/MTA-Bus-Wait-Assessment-2015-2019/bmix-dpzc/about_data
+
+NICKNAME : speed
+FULL NAME : MTA_Bus_Speeds__2015-2019_20241001.csv
+SOURCE : https://data.ny.gov/Transportation/MTA-Bus-Speeds-2015-2019/cudb-vcni/about_data
+
+
+
+##### DELIVERY FIELDS
+
+# DELIVERY
+MONTH : Represents the date of the service delivered (yyyy-mm-dd).
+BOROUGH : One of the five boroughs of New York City (Bronx, Brooklyn, Manhattan, Queens, Staten Island).
+DAY_TYPE : Represents 1 as weekday and 2 as weekend.
+TRIP_TYPE : The type of bus service provided: EXP (Express), LCL/LTD (Local/Limited), SBS (Select Bus Service).
+ROUTE_ID : Identifies each individual bus route, as well as cumulative totals for all bus routes (identified as ALL).
+PERIOD : Represents the peak service period (Peak, Systemwide).
+----------
+ACTUAL_NUMBER_OF_BUSES : The number of buses that actually ran each month, on each route, during peak hours.
+SCHEDULED_NUMBER_OF_BUSES : The number of buses that was scheduled to run each month, on each route, during peak hours.
+SERVICE_DELIVERED : The percentage of service delivered based on the number of buses scheduled and the number of buses that actually ran each month, on each route, during peak hours.
+
+# WAIT
+MONTH : Represents the time period in which the wait assessment is being calculated (yyyy-mm-dd)
+BOROUGH : Represents the five boroughs of New York City (Bronx, Brooklyn, Manhattan, Queens, Staten Island).
+DAY_TYPE : Represents 1 as weekday and 2 as weekend.
+TRIP_TYPE : The type of bus service provided: EXP (Express), LCL/LTD (Local/Limited), SBS (Select Bus Service).
+ROUTE_ID : Identifies each individual bus route, as well as cumulative totals for all bus routes (identified as ALL).
+PERIOD : Represents both the peak and off-peak service periods (Off-Peak, Peak, Systemwide).
+----------
+NUMBER_OF_TRIPS_PASSING_WAIT : 	The number of trips that are no more than three minutes over their scheduled intervals for each bus route, monthly, during peak and off-peak hours.
+NUMBER_OF_SCHEDULED_TRIPS : The number of scheduled trips for each bus route, monthly, during peak and off-peak hours.
+WAIT_ASSESSMENT : The percentage of trips that pass the wait assessment on each bus route, monthly, during peak and off-peak hours.
+
+# SPEED
+MONTH : Represents the time period in which the average speed is being calculated (yyyy-mm-dd).
+BOROUGH : Represents the five boroughs of New York City (Bronx, Brooklyn, Manhattan, Queens, Staten Island).
+DAY_TYPE : Represents 1 as weekday and 2 as weekend.
+TRIP_TYPE : The type of bus service provided: EXP (Express), LCL/LTD (Local/Limited), SBS (Select Bus Service).
+ROUTE_ID : Identifies each individual bus route, as well as cumulative totals for all bus routes (identified as ALL)
+PERIOD : Represents both the peak and off-peak service periods (Off-Peak, Peak, Systemwide).
+----------
+TOTAL_OPERATING_TIME : The total mileage for each bus route, monthly, during peak and off-peak hours.
+TOTAL_MILEAGE : The total operating time for each bus route, monthly, during peak and off-peak hours.
+AVERAGE_SPEED : The average speed is based on the total operating time and total mileage, per bus route, per month.
+
+
+
+##### SPECIAL NOTES ON FIELDS
+1. Any values of "Systemwide" represent values for the whole system--so for everything combined.
